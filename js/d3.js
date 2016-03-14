@@ -4,12 +4,14 @@ d3.selection.prototype.moveToFront = function() {
 	});
 };
 
+
 var w = window,
     d = document,
     e = d.documentElement,
     g = d.getElementsByTagName('body')[0],
-    wx = w.innerWidth || e.clientWidth || g.clientWidth,
-    wy = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    ww = w.innerWidth || e.clientWidth || g.clientWidth,
+    wh = w.innerHeight|| e.clientHeight|| g.clientHeight;
+var maxh = 600;
 
 var drawChart = function() {
 	// data pre-processing
@@ -22,8 +24,8 @@ var drawChart = function() {
 	}
 
 	// now let us draw
-	var cw = wx;
-	var ch = wy;
+	var cw = ww;
+	var ch = d3.min([wh, maxh]);
 	var paddings = {top: 120, right: 40, bottom: 40, left: 40};
 	var xScale = d3.scale.linear().domain([0, 5]).range([0 + paddings.left, cw - paddings.right]);
 	var yScale = d3.scale.linear().domain([0, 4]).range([0 + paddings.top, ch - paddings.bottom]);
@@ -99,7 +101,7 @@ var drawTimelines = function() {
 	};
 
 	// now let us draw
-	var cw = wx;
+	var cw = ww;
 	var ch = months*step;
 	var paddings = {top: 40, right: Math.round(cw/6), bottom: 40, left: Math.round(cw/6)};
 
@@ -141,5 +143,8 @@ var drawTimelines = function() {
 				})
 		});
 };
-$(drawChart);
-$(drawTimelines);
+$(function() {
+	ww = $('body').width();
+	drawChart();
+	drawTimelines();
+});
