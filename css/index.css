@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "PingFang TC", sans-serif;
+  font-size: 14px;
+  background: #eee; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-weight: normal; }
+
+a, a:hover, a:active, a:visited {
+  color: blue;
+  text-decoration: none; }
+
+section#cover {
+  display: block;
+  padding-bottom: 2em; }
+  section#cover > #cover-image {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 92.4%;
+    background-image: url("../images/cover-mobile.png");
+    background-size: contain; }
+  section#cover > #title {
+    margin: 4em 0; }
+    section#cover > #title > #pre {
+      width: 10em;
+      margin: 1em auto;
+      padding: 0.5em 1em;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      text-align: center; }
+    section#cover > #title > h1 {
+      font-size: 4em;
+      margin: 0;
+      padding: 0.5em 0.2em 0;
+      text-align: center; }
+  section#cover > #opening {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 1em; }
+
+section#street {
+  padding-top: 10em;
+  background-image: url("../images/scenes_street.svg");
+  background-position: center center;
+  background-repeat: repeat-y; }
+  section#street > .chapter {
+    padding: 5em 0; }
+    section#street > .chapter > .card {
+      margin: 0 auto;
+      padding: 1em 2em;
+      background: #fff;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
+      section#street > .chapter > .card > h2 {
+        font-size: 2em;
+        margin: 0.5em 0;
+        text-align: center; }
+    section#street > .chapter > .reports {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      max-width: 600px;
+      margin: 3em auto;
+      padding: 2em; }
+      section#street > .chapter > .reports > .report {
+        position: relative;
+        display: block;
+        flex: 1 1 200px;
+        margin-bottom: 1.5em;
+        border: 3px solid #555;
+        border-radius: 3px; }
+        section#street > .chapter > .reports > .report > .thumbnail {
+          display: block;
+          width: 100%;
+          height: 0%;
+          padding-bottom: 55%;
+          background-color: #ccc;
+          background-size: 100%;
+          background-position: center center; }
+        section#street > .chapter > .reports > .report > time, section#street > .chapter > .reports > .report > h3 {
+          margin: 0;
+          padding: 0.5em;
+          background: #f0f0f0;
+          color: #0f0f0f; }
+        section#street > .chapter > .reports > .report > time {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 0.8em;
+          font-weight: bold;
+          line-height: 1.0; }
+        section#street > .chapter > .reports > .report > h3 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          font-size: inherit; }
+
+section#legislature > h2, section#now > h2 {
+  margin: 0;
+  padding: 1em 0.5em;
+  font-size: 2em;
+  text-align: center; }
+
+#timelineTitles {
+  display: flex; }
+  #timelineTitles > .title {
+    flex: 1 1 6em;
+    padding: 0.5em;
+    color: #f0f0f0;
+    text-align: center; }
+
+svg {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px; }
+
+#timelines {
+  background-image: url("../images/scenes_legislature.svg");
+  background-position: center center;
+  background-repeat: repeat-y; }
+
+#chart {
+  margin: 0; }
+  #chart > svg.focusOn g.proposal {
+    opacity: 0.25; }
+  #chart > svg.focusOn g.proposal.focused {
+    opacity: 1.0; }
+
+footer {
+  padding: 5em 2em;
+  background: #ccc;
+  text-align: center; }
+  footer > #share {
+    padding: 1em; }
+  footer > #credits a {
+    display: inline-block; }
+
+.watchout-logotype {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 0;
+  padding-bottom: 37.5%;
+  background-image: url("../images/watchout-logotype.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=index.css.map */
