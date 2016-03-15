@@ -51,6 +51,34 @@ section#cover {
     margin: 0 auto;
     padding: 1em; }
 
+section > .cover {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 200px;
+  outline: 1px solid #ccc; }
+  section > .cover:before, section > .cover:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380.69116px;
+    height: 1px;
+    background: #ccc;
+    transform: rotate(31.65756deg);
+    transform-origin: top left; }
+  section > .cover:after {
+    transform: rotate(-31.65756deg);
+    transform-origin: top left;
+    top: 100%; }
+  section > .cover > label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+
 section#street {
   padding-top: 10em;
   background-image: url("../images/scenes_street.svg");
@@ -135,9 +163,11 @@ svg {
 
 #chart {
   margin: 0; }
-  #chart > svg.focusOn g.proposal {
+  #chart > svg > g.proposal {
+    cursor: pointer; }
+  #chart > svg.focusOn > g.proposal {
     opacity: 0.25; }
-  #chart > svg.focusOn g.proposal.focused {
+  #chart > svg.focusOn > g.proposal.focused {
     opacity: 1.0; }
 
 footer {

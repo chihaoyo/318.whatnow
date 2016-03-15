@@ -1,8 +1,11 @@
+@import 'trig';
+
 $black: #0f0f0f;
 $background: #eee;
 $white: #f0f0f0;
 $trueWhite: #fff;
 $trueBlack: #000;
+$grey: #ccc;
 
 * {
 	box-sizing: border-box;
@@ -60,6 +63,45 @@ section#cover {
 		max-width: 36em;
 		margin: 0 auto;
 		padding: 1em;
+	}
+}
+section {
+	> .cover {
+		position: relative;
+		$coverW: 320;
+		$coverH: 200;
+		$hypotenuse: sqrt($coverW * $coverW + $coverH * $coverH);
+		$a: asin($coverH / $hypotenuse);
+		margin: 0 auto;
+		width: #{$coverW}px;
+		height: #{$coverH}px;
+		outline: 1px solid $grey;
+
+		&:before, &:after {
+			content: ' ';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: #{$hypotenuse}px;
+			height: 1px;
+			background: $grey;
+			transform: rotate($a);
+			transform-origin: top left;
+		}
+		&:after {
+			transform: rotate(-$a);
+			transform-origin: top left;
+			top: 100%;
+		}
+
+		> label {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
 	}
 }
 section#street {
@@ -170,11 +212,14 @@ svg {
 #chart {
 	margin: 0;
 	> svg {
+		> g.proposal {
+			cursor: pointer;
+		}
 		&.focusOn {
-			g.proposal {
+			> g.proposal {
 				opacity: 0.25;
 			}
-			g.proposal.focused {
+			> g.proposal.focused {
 				opacity: 1.0;
 			}
 		}
