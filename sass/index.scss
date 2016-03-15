@@ -28,7 +28,7 @@ body {
 	width: 100%;
 	max-width: 320px;
 	font-family: "Helvetica Neue", "PingFang TC", sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.5;
 	background: $background;
 }
@@ -37,8 +37,8 @@ ol, ul {
 	margin: 0;
 	padding: 0;
 }
-h1, h2, h3 {
-	font-family: "Helvetica Neue", xingothic-tc, "PingFang TC", sans-serif;
+h1, h2 {
+	font-family: xingothic-tc, "Helvetica Neue", "PingFang TC", sans-serif;
 }
 h3 {
 	font-weight: normal;
@@ -47,6 +47,10 @@ a, a:hover, a:active, a:visited {
 	color: blue;
 	text-decoration: none;
 }
+span.emphasis {
+	font-weight: bold;
+}
+
 section#cover {
 	display: block;
 	padding-bottom: 2em;
@@ -118,7 +122,7 @@ section {
 		}
 	}
 	> p {
-		width: 20em;
+		width: 18em;
 		margin: 1.5em auto;
 		line-height: 1.5;
 	}
@@ -133,18 +137,18 @@ section#street {
 		padding: 5em 0;
 		> .card {
 			margin: 0 auto;
-			padding: 1.5em 2em;
+			padding: 1.5em;
 			background: $trueWhite;
-			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+			//box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 			cursor: pointer;
 			> h2 {
-				font-size: 2em;
+				font-size: 2.5em;
 				margin: 0;
 				text-align: center;
 			}
 			> .description {
 				margin: 1em auto 0;
-				width: 18em;
+				width: 17em;
 			}
 		}
 		> .expand {
@@ -152,11 +156,12 @@ section#street {
 			> button {
 				-webkit-appearance: none;
 				font-size: 1em;
-				margin: 1em;
+				width: 100%;
+				margin: 0;
 				padding: 1em;
 				border: none;
-				border-radius: 2px;
-				background: $white;
+				background: $darkGrey;
+				color: $white;
 				cursor: pointer;
 			}
 		}
@@ -289,6 +294,7 @@ footer {
 		padding: 1em;
 	}
 	> #credits {
+		text-align: left;
 		a { display: inline-block; }
 	}
 }

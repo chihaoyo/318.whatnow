@@ -7,7 +7,7 @@ body {
   width: 100%;
   max-width: 320px;
   font-family: "Helvetica Neue", "PingFang TC", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   background: #eee; }
 
@@ -16,8 +16,8 @@ ol, ul {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3 {
-  font-family: "Helvetica Neue", xingothic-tc, "PingFang TC", sans-serif; }
+h1, h2 {
+  font-family: xingothic-tc, "Helvetica Neue", "PingFang TC", sans-serif; }
 
 h3 {
   font-weight: normal; }
@@ -25,6 +25,9 @@ h3 {
 a, a:hover, a:active, a:visited {
   color: blue;
   text-decoration: none; }
+
+span.emphasis {
+  font-weight: bold; }
 
 section#cover {
   display: block;
@@ -80,7 +83,7 @@ section > .cover {
     transform: translate(-50%, -50%);
     z-index: 2; }
 section > p {
-  width: 20em;
+  width: 18em;
   margin: 1.5em auto;
   line-height: 1.5; }
 
@@ -93,27 +96,27 @@ section#street {
     padding: 5em 0; }
     section#street > .chapter > .card {
       margin: 0 auto;
-      padding: 1.5em 2em;
+      padding: 1.5em;
       background: #fff;
-      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
       cursor: pointer; }
       section#street > .chapter > .card > h2 {
-        font-size: 2em;
+        font-size: 2.5em;
         margin: 0;
         text-align: center; }
       section#street > .chapter > .card > .description {
         margin: 1em auto 0;
-        width: 18em; }
+        width: 17em; }
     section#street > .chapter > .expand {
       text-align: center; }
       section#street > .chapter > .expand > button {
         -webkit-appearance: none;
         font-size: 1em;
-        margin: 1em;
+        width: 100%;
+        margin: 0;
         padding: 1em;
         border: none;
-        border-radius: 2px;
-        background: #f0f0f0;
+        background: #555;
+        color: #f0f0f0;
         cursor: pointer; }
     section#street > .chapter > .reports {
       display: flex;
@@ -210,8 +213,10 @@ footer {
   text-align: center; }
   footer > #share {
     padding: 1em; }
-  footer > #credits a {
-    display: inline-block; }
+  footer > #credits {
+    text-align: left; }
+    footer > #credits a {
+      display: inline-block; }
 
 .watchout-logotype {
   display: block;
