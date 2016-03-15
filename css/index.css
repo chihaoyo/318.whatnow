@@ -82,6 +82,10 @@ section > .cover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; }
+section > .cover.short {
+  height: 88px; }
+  section > .cover.short:before, section > .cover.short:after {
+    content: none; }
 section > p {
   width: 18em;
   margin: 1.5em auto;
@@ -96,26 +100,33 @@ section#street {
     padding: 5em 0; }
     section#street > .chapter > .card {
       margin: 0 auto;
-      padding: 1.5em;
-      background: #fff;
+      padding-bottom: 0.5em;
+      background: #4d4d4d;
+      color: #f0f0f0;
       cursor: pointer; }
       section#street > .chapter > .card > h2 {
+        display: none;
         font-size: 2.5em;
         margin: 0;
         text-align: center; }
+      section#street > .chapter > .card > .title {
+        width: 100%;
+        height: 88px;
+        background-size: cover; }
       section#street > .chapter > .card > .description {
-        margin: 1em auto 0;
-        width: 17em; }
+        margin: 0 auto;
+        width: 19em; }
     section#street > .chapter > .expand {
+      background: #4d4d4d;
       text-align: center; }
       section#street > .chapter > .expand > button {
         -webkit-appearance: none;
-        font-size: 1em;
         width: 100%;
+        font-size: 1em;
         margin: 0;
-        padding: 1em;
+        padding: 0.5em 1em;
         border: none;
-        background: #555;
+        background: #000;
         color: #f0f0f0;
         cursor: pointer; }
     section#street > .chapter > .reports {
@@ -197,15 +208,21 @@ svg {
   background-image: url("../images/scenes_legislature.svg");
   background-position: center center;
   background-repeat: repeat-y; }
+  #timelines > svg > g.event {
+    cursor: pointer; }
 
 #chart {
   margin: 0; }
   #chart > svg > g.proposal {
     cursor: pointer; }
+    #chart > svg > g.proposal > .value > text {
+      display: none; }
   #chart > svg.focusOn > g.proposal {
-    opacity: 0.25; }
+    opacity: 0.15; }
   #chart > svg.focusOn > g.proposal.focused {
     opacity: 1.0; }
+    #chart > svg.focusOn > g.proposal.focused > .value > text {
+      display: block; }
 
 footer {
   padding: 5em 2em;

@@ -18,6 +18,9 @@ $trueWhite: #fff;
 $trueBlack: #000;
 $grey: #ccc;
 $darkGrey: #555;
+$graphicsGrey: #4d4d4d;
+
+$navH: 88px;
 
 * {
 	box-sizing: border-box;
@@ -121,6 +124,10 @@ section {
 			z-index: 2;
 		}
 	}
+	> .cover.short {
+		height: $navH;
+		&:before, &:after { content: none; }
+	}
 	> p {
 		width: 18em;
 		margin: 1.5em auto;
@@ -137,30 +144,38 @@ section#street {
 		padding: 5em 0;
 		> .card {
 			margin: 0 auto;
-			padding: 1.5em;
-			background: $trueWhite;
+			padding-bottom: 0.5em;
+			background: $graphicsGrey;
+			color: $white;
 			//box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 			cursor: pointer;
 			> h2 {
+				display: none;
 				font-size: 2.5em;
 				margin: 0;
 				text-align: center;
 			}
+			> .title {
+				width: 100%;
+				height: $navH;
+				background-size: cover;
+			}
 			> .description {
-				margin: 1em auto 0;
-				width: 17em;
+				margin: 0 auto;
+				width: 19em;
 			}
 		}
 		> .expand {
+			background: $graphicsGrey;
 			text-align: center;
 			> button {
 				-webkit-appearance: none;
-				font-size: 1em;
 				width: 100%;
+				font-size: 1em;
 				margin: 0;
-				padding: 1em;
+				padding: 0.5em 1em;
 				border: none;
-				background: $darkGrey;
+				background: $trueBlack;
 				color: $white;
 				cursor: pointer;
 			}
@@ -269,19 +284,26 @@ svg {
 	background-image: url('../images/scenes_legislature.svg');
 	background-position: center center;
 	background-repeat: repeat-y;
+	> svg {
+		> g.event {
+			cursor: pointer;
+		}
+	}
 }
 #chart {
 	margin: 0;
 	> svg {
 		> g.proposal {
 			cursor: pointer;
+			> .value > text { display: none; }
 		}
 		&.focusOn {
 			> g.proposal {
-				opacity: 0.25;
+				opacity: 0.15;
 			}
 			> g.proposal.focused {
 				opacity: 1.0;
+				> .value > text { display: block; }
 			}
 		}
 	}
@@ -309,9 +331,8 @@ footer {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-$navH: 88;
 #space {
-	height: #{$navH}px;
+	height: $navH;
 }
 nav {
 	display: block;
@@ -331,7 +352,7 @@ nav {
 			background-image: url('../images/graphics_nav.svg');
 			background-size: cover;
 			background-repeat: no-repeat;
-			height: #{$navH}px;
+			height: $navH;
 			cursor: pointer;
 
 			$gap: (20/3);
