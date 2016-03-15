@@ -126,6 +126,7 @@ section {
 	}
 	> .cover.short {
 		height: $navH;
+		border: none;
 		&:before, &:after { content: none; }
 	}
 	> p {

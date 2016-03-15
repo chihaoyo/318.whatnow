@@ -83,7 +83,8 @@ section > .cover {
     transform: translate(-50%, -50%);
     z-index: 2; }
 section > .cover.short {
-  height: 88px; }
+  height: 88px;
+  border: none; }
   section > .cover.short:before, section > .cover.short:after {
     content: none; }
 section > p {
