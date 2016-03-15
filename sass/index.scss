@@ -6,6 +6,7 @@ $white: #f0f0f0;
 $trueWhite: #fff;
 $trueBlack: #000;
 $grey: #ccc;
+$darkGrey: #555;
 
 * {
 	box-sizing: border-box;
@@ -38,8 +39,8 @@ section#cover {
 		display: block;
 		width: 100%;
 		height: 0;
-		padding-bottom: 92.4%;
-		background-image: url('../images/cover-mobile.png');
+		padding-bottom: 100%;
+		background-image: url('../images/graphics_open.svg');
 		background-size: contain;
 	}
 	> #title {
@@ -69,13 +70,14 @@ section {
 	> .cover {
 		position: relative;
 		$coverW: 320;
-		$coverH: 200;
+		$coverH: 320;
 		$hypotenuse: sqrt($coverW * $coverW + $coverH * $coverH);
-		$a: asin($coverH / $hypotenuse);
+		$a: 45deg; //asin($coverH / $hypotenuse);
 		margin: 0 auto;
 		width: #{$coverW}px;
 		height: #{$coverH}px;
-		outline: 1px solid $grey;
+		outline: 1px solid $darkGrey;
+		overflow: hidden;
 
 		&:before, &:after {
 			content: ' ';
@@ -85,7 +87,7 @@ section {
 			left: 0;
 			width: #{$hypotenuse}px;
 			height: 1px;
-			background: $grey;
+			background: $darkGrey;
 			transform: rotate($a);
 			transform-origin: top left;
 		}
@@ -114,16 +116,31 @@ section#street {
 		padding: 5em 0;
 		> .card {
 			margin: 0 auto;
-			padding: 1em 2em;
+			padding: 1.5em 2em;
 			background: $trueWhite;
 			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 			cursor: pointer;
 			> h2 {
 				font-size: 2em;
-				margin: 0.5em 0;
+				margin: 0;
 				text-align: center;
+				line-height: 1.0;
 			}
 			> .description {
+				margin: 1em 0 0;
+			}
+		}
+		> .expand {
+			text-align: center;
+			> button {
+				-webkit-appearance: none;
+				font-size: 1em;
+				margin: 1em;
+				padding: 1em;
+				border: none;
+				border-radius: 2px;
+				background: $white;
+				cursor: pointer;
 			}
 		}
 		> .reports {
@@ -139,9 +156,10 @@ section#street {
 			> .report {
 				position: relative;
 				display: block;
-				flex: 1 1 200px;
+				flex: 1 1 80px;
+				margin: 1px;
 				margin-bottom: 1.5em;
-				border: 3px solid #555;
+				border: 3px solid #aaa;
 				border-radius: 3px;
 
 				> .thumbnail {
@@ -150,12 +168,11 @@ section#street {
 					height: 0%;
 					padding-bottom: 55%;
 					background-color: #ccc;
-					background-size: 100%;
+					background-size: 200%;
 					background-position: center center;
 				}
 				> time, > h3 {
 					margin: 0;
-					padding: 0.5em;
 					background: $white;
 					color: $black;
 				}
@@ -163,16 +180,30 @@ section#street {
 					position: absolute;
 					top: 0;
 					right: 0;
+					padding: 0.25em 0.5em;
 					font-size: 0.8em;
 					font-weight: bold;
 					line-height: 1.0;
 				}
 				> h3 {
+					display: none;
 					position: absolute;
 					bottom: 0;
 					width: 100%;
+					padding: 0.5em;
 					font-size: inherit;
 				}
+			}
+		}
+	}
+	> .chapter.expanded {
+		> .reports > .report {
+			flex: 1 1 200px;
+			> .thumbnail {
+				background-size: 100%;
+			}
+			> h3 {
+				display: block;
 			}
 		}
 	}
@@ -189,6 +220,14 @@ section#legislature {
 	//background-color: #f02c00;
 }
 section#now {
+}
+section#update {
+	> h2 {
+		font-size: 2em;
+		margin: 0;
+		text-align: center;
+		line-height: 1.0;
+	}
 }
 #timelineTitles {
 	display: flex;
@@ -246,4 +285,42 @@ footer {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+$navH: 88;
+#space {
+	height: #{$navH}px;
+}
+nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 320px;
+	color: $white;
+	background: $black;
+	line-height: 1.0;
+
+	> ul {
+		display: flex;
+		justify-content: space-around;
+		> li {
+			$itemW: 100;
+			flex: 1 1 #{$itemW}px;
+			background-image: url('../images/graphics_nav.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: #{$navH}px;
+			cursor: pointer;
+
+			$gap: (20/3);
+			&#firstImpact {
+				background-position: 0 0;
+			}
+			&#newCongress {
+				background-position: -#{$itemW + $gap}px 0;
+			}
+			&#partyVersionAttack {
+				background-position: -#{($itemW + $gap)*2}px 0;
+			}
+		}
+	}
 }

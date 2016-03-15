@@ -5,6 +5,12 @@ $(function() {
 		var $card = $('<div>').addClass('card').appendTo($chapter);
 		$('<h2>').text(data.chapters[i].title).appendTo($card);
 		$('<p>').addClass('description').text(data.chapters[i].description).appendTo($card);
+		var $expand = $('<div>').addClass('expand').appendTo($chapter);
+		var $expandButton = $('<button>').text('展開').appendTo($expand).click(function() {
+			var $b = $(this);
+			$b.parents('.chapter').toggleClass('expanded');
+			$b.text(($b.text() == '展開' ? '收合' : '展開'));
+		});
 		var $reports = $('<div>').addClass('reports').appendTo($chapter);
 		for(var j = 0; j < data.reports.length; j++) {
 			var report = data.reports[j];

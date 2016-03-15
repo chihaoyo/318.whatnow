@@ -29,8 +29,8 @@ section#cover {
     display: block;
     width: 100%;
     height: 0;
-    padding-bottom: 92.4%;
-    background-image: url("../images/cover-mobile.png");
+    padding-bottom: 100%;
+    background-image: url("../images/graphics_open.svg");
     background-size: contain; }
   section#cover > #title {
     margin: 4em 0; }
@@ -55,21 +55,22 @@ section > .cover {
   position: relative;
   margin: 0 auto;
   width: 320px;
-  height: 200px;
-  outline: 1px solid #ccc; }
+  height: 320px;
+  outline: 1px solid #555;
+  overflow: hidden; }
   section > .cover:before, section > .cover:after {
     content: ' ';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 380.69116px;
+    width: 462.4573px;
     height: 1px;
-    background: #ccc;
-    transform: rotate(31.65756deg);
+    background: #555;
+    transform: rotate(45deg);
     transform-origin: top left; }
   section > .cover:after {
-    transform: rotate(-31.65756deg);
+    transform: rotate(-45deg);
     transform-origin: top left;
     top: 100%; }
   section > .cover > label {
@@ -88,14 +89,28 @@ section#street {
     padding: 5em 0; }
     section#street > .chapter > .card {
       margin: 0 auto;
-      padding: 1em 2em;
+      padding: 1.5em 2em;
       background: #fff;
       box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
       cursor: pointer; }
       section#street > .chapter > .card > h2 {
         font-size: 2em;
-        margin: 0.5em 0;
-        text-align: center; }
+        margin: 0;
+        text-align: center;
+        line-height: 1.0; }
+      section#street > .chapter > .card > .description {
+        margin: 1em 0 0; }
+    section#street > .chapter > .expand {
+      text-align: center; }
+      section#street > .chapter > .expand > button {
+        -webkit-appearance: none;
+        font-size: 1em;
+        margin: 1em;
+        padding: 1em;
+        border: none;
+        border-radius: 2px;
+        background: #f0f0f0;
+        cursor: pointer; }
     section#street > .chapter > .reports {
       display: flex;
       flex-flow: row wrap;
@@ -107,9 +122,10 @@ section#street {
       section#street > .chapter > .reports > .report {
         position: relative;
         display: block;
-        flex: 1 1 200px;
+        flex: 1 1 80px;
+        margin: 1px;
         margin-bottom: 1.5em;
-        border: 3px solid #555;
+        border: 3px solid #aaa;
         border-radius: 3px; }
         section#street > .chapter > .reports > .report > .thumbnail {
           display: block;
@@ -117,31 +133,45 @@ section#street {
           height: 0%;
           padding-bottom: 55%;
           background-color: #ccc;
-          background-size: 100%;
+          background-size: 200%;
           background-position: center center; }
         section#street > .chapter > .reports > .report > time, section#street > .chapter > .reports > .report > h3 {
           margin: 0;
-          padding: 0.5em;
           background: #f0f0f0;
           color: #0f0f0f; }
         section#street > .chapter > .reports > .report > time {
           position: absolute;
           top: 0;
           right: 0;
+          padding: 0.25em 0.5em;
           font-size: 0.8em;
           font-weight: bold;
           line-height: 1.0; }
         section#street > .chapter > .reports > .report > h3 {
+          display: none;
           position: absolute;
           bottom: 0;
           width: 100%;
+          padding: 0.5em;
           font-size: inherit; }
+  section#street > .chapter.expanded > .reports > .report {
+    flex: 1 1 200px; }
+    section#street > .chapter.expanded > .reports > .report > .thumbnail {
+      background-size: 100%; }
+    section#street > .chapter.expanded > .reports > .report > h3 {
+      display: block; }
 
 section#legislature > h2, section#now > h2 {
   margin: 0;
   padding: 1em 0.5em;
   font-size: 2em;
   text-align: center; }
+
+section#update > h2 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  line-height: 1.0; }
 
 #timelineTitles {
   display: flex; }
@@ -189,5 +219,33 @@ footer {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat; }
+
+#space {
+  height: 88px; }
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 320px;
+  color: #f0f0f0;
+  background: #0f0f0f;
+  line-height: 1.0; }
+  nav > ul {
+    display: flex;
+    justify-content: space-around; }
+    nav > ul > li {
+      flex: 1 1 100px;
+      background-image: url("../images/graphics_nav.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 88px;
+      cursor: pointer; }
+      nav > ul > li#firstImpact {
+        background-position: 0 0; }
+      nav > ul > li#newCongress {
+        background-position: -106.66667px 0; }
+      nav > ul > li#partyVersionAttack {
+        background-position: -213.33333px 0; }
 
 /*# sourceMappingURL=index.css.map */

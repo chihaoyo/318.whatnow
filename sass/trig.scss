@@ -6,133 +6,133 @@ $_precision: 10;
 }
 
 @function pow($base, $exp) {
-  $value: $base;
-  @if $exp > 1 {
-    @for $i from 2 through $exp {
-      $value: $value * $base;
-    }
-  }
-  @if $exp < 1{
-    @for $i from 0 through -$exp {
-      $value: $value / $base;
-    }
-  }
-  @return $value;
+	$value: $base;
+	@if $exp > 1 {
+		@for $i from 2 through $exp {
+			$value: $value * $base;
+		}
+	}
+	@if $exp < 1 {
+		@for $i from 0 through -$exp {
+			$value: $value / $base;
+		}
+	}
+	@return $value;
 }
 
 @function fact($num) {
-  $fact: 1;
-  @if $num > 0{
-    @for $i from 1 through $num {
-      $fact: $fact * $i;
-    }
-  }
-  @return $fact;
+	$fact: 1;
+	@if $num > 0{
+		@for $i from 1 through $num {
+			$fact: $fact * $i;
+		}
+	}
+	@return $fact;
 }
 
 @function _to_unitless_rad($angle) {
-  @if unit($angle) == "deg" {
-    $angle: $angle / 180deg * $pi;
-  }
-  @if unit($angle) == "rad" {
-    $angle: $angle / 1rad;
-  }
-  @return $angle;
+	@if unit($angle) == "deg" {
+		$angle: $angle / 180deg * $pi;
+	}
+	@if unit($angle) == "rad" {
+		$angle: $angle / 1rad;
+	}
+	@return $angle;
 }
 
 @function sin($angle){
-  $a: _to_unitless_rad($angle);
-  $sin: $a;
-  @for $n from 1 through $_precision {
-    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1) ) * pow($a, (2 * $n + 1));
-  }
-  @return $sin;
+	$a: _to_unitless_rad($angle);
+	$sin: $a;
+	@for $n from 1 through $_precision {
+		$sin: $sin + (pow(-1, $n) / fact(2 * $n + 1) ) * pow($a, (2 * $n + 1));
+	}
+	@return $sin;
 }
 
 @function cos($angle){
-  $a: _to_unitless_rad($angle);
-  $cos: 1;
-  @for $n from 1 through $_precision {
-    $cos: $cos + ( pow(-1,$n) / fact(2*$n) ) * pow($a,2*$n);
-  }
-  @return $cos;
+	$a: _to_unitless_rad($angle);
+	$cos: 1;
+	@for $n from 1 through $_precision {
+		$cos: $cos + ( pow(-1,$n) / fact(2*$n) ) * pow($a,2*$n);
+	}
+	@return $cos;
 }
 
 @function tan($angle){
-  @return sin($angle) / cos($angle);
+	@return sin($angle) / cos($angle);
 }
 @function sqrt($r) {
-  $x0: 1;
-  $x1: $x0;
+	$x0: 1;
+	$x1: $x0;
 
-  @for $i from 1 through 10 {
-    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
-    $x0: $x1;
-  }
+	@for $i from 1 through 10 {
+		$x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+		$x0: $x1;
+	}
 
-  @return $x1;
+	@return $x1;
 }
 
 $default-threshold: pi()/180/20;
 
 @function convert-angle($value, $unit-name) {
-  $factors: (
-    rad: 1rad,
-    deg: 180deg/pi(),
-    grad: 200grad/pi(),
-    turn: .5turn/pi()
-  );
+	$factors: (
+		rad: 1rad,
+		deg: 180deg/pi(),
+		grad: 200grad/pi(),
+		turn: .5turn/pi()
+	);
 
-  @if not unitless($value) {
-    @warn '`#{$value}` should be unitless';
-    @return false;
-  }
+	@if not unitless($value) {
+		@warn '`#{$value}` should be unitless';
+		@return false;
+	}
 
-  @if not map-has-key($factors, $unit-name) {
-    @warn 'unit `#{$unit-name}` is not a valid unit - please make sure it is either `deg`, `rad`, `grad` or `turn`';
-    @return false;
-  }
+	@if not map-has-key($factors, $unit-name) {
+		@warn 'unit `#{$unit-name}` is not a valid unit - please make sure it is either `deg`, `rad`, `grad` or `turn`';
+		@return false;
+	}
 
-  @return $value*map-get($factors, $unit-name);
+	@return $value*map-get($factors, $unit-name);
 }
 
 @function asin($z, $unit-name: deg, $threshold: $default-threshold) {
-  $sum: 0;
-  $complement: false;
-  $sign: if($z != 0, $z/abs($z), 1);
-  $z: abs($z);
+	$sum: 0;
+	$complement: false;
+	$sign: if($z != 0, $z/abs($z), 1);
+	$z: abs($z);
 
-  @if $z > 1 {
-    @warn 'illegal `#{$z}` value for function';
-    @return false;
-  }
+	@if $z > 1 {
+		@warn 'illegal `#{$z}` value for function';
+		@return false;
+	}
 
-  @if $z > sin(pi()/4) {
-    $complement: true;
-    $z: sqrt(1 - pow($z, 2));
-  }
+	@if $z > sin(pi()/4) {
+		$complement: true;
+		$z: sqrt(1 - pow($z, 2));
+	}
 
-  $term: $z;
-  $i: 0;
-  $k: 1;
+	$term: $z;
+	$i: 0;
+	$k: 1;
 
-  @while $term > $threshold {
-    $sum: $sum + $term;
+	@while $term > $threshold {
+		$sum: $sum + $term;
 
-    $i: $i + 1;
-    $k: $k*(2*$i - 1)/(2*$i);
-    $j: 2*$i + 1;
+		$i: $i + 1;
+		$k: $k*(2*$i - 1)/(2*$i);
+		$j: 2*$i + 1;
 
-    $term: $k*pow($z, $j)/$j;
-  }
+		$term: $k*pow($z, $j)/$j;
+	}
 
-  @return convert-angle($sign*(if($complement, pi()/2 - $sum, $sum)), $unit-name);
+	@return convert-angle($sign*(if($complement, pi()/2 - $sum, $sum)), $unit-name);
 }
 
 @function acos($z, $unit-name: deg, $threshold: $default-threshold) {
-  @return convert-angle(pi()/2, $unit-name) - asin($z, $unit-name, $threshold);
+	@return convert-angle(pi()/2, $unit-name) - asin($z, $unit-name, $threshold);
 }
 
 @function atan($z, $unit-name: deg, $threshold: $default-threshold) {
-  @return asin($z/sqrt(1 + pow($z, 2)), $unit-name, $threshold);
+	@return asin($z/sqrt(1 + pow($z, 2)), $unit-name, $threshold);
 }
