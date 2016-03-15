@@ -34,4 +34,8 @@ $(function() {
 			.text(data.timelines[i].title)
 			.css('background-color', data.timelines[i].color);
 	}
+
+	$('nav > ul > li').click(function() {
+		$('body').animate({'scrollTop': $('section#' + $(this).attr('data-target')).position().top - 88 + 1});
+	})
 });
