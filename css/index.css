@@ -8,6 +8,7 @@ body {
   max-width: 320px;
   font-family: "Helvetica Neue", "PingFang TC", sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   background: #eee; }
 
 ol, ul {
@@ -46,17 +47,13 @@ section#cover {
       margin: 0;
       padding: 0.5em 0.2em 0;
       text-align: center; }
-  section#cover > #opening {
-    max-width: 36em;
-    margin: 0 auto;
-    padding: 1em; }
 
 section > .cover {
   position: relative;
   margin: 0 auto;
   width: 320px;
   height: 320px;
-  outline: 1px solid #555;
+  border: 1px solid #555;
   overflow: hidden; }
   section > .cover:before, section > .cover:after {
     content: ' ';
@@ -79,6 +76,10 @@ section > .cover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; }
+section > p {
+  width: 20em;
+  margin: 1.5em auto;
+  line-height: 1.5; }
 
 section#street {
   padding-top: 10em;
@@ -96,10 +97,10 @@ section#street {
       section#street > .chapter > .card > h2 {
         font-size: 2em;
         margin: 0;
-        text-align: center;
-        line-height: 1.0; }
+        text-align: center; }
       section#street > .chapter > .card > .description {
-        margin: 1em 0 0; }
+        margin: 1em auto 0;
+        width: 18em; }
     section#street > .chapter > .expand {
       text-align: center; }
       section#street > .chapter > .expand > button {
@@ -212,10 +213,10 @@ footer {
 .watchout-logotype {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  width: 100%;
   height: 0;
-  padding-bottom: 37.5%;
-  background-image: url("../images/watchout-logotype.svg");
+  padding-bottom: 100%;
+  background-image: url("../images/graphics_watchout.svg");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat; }
