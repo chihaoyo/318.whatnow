@@ -16,6 +16,9 @@ ol, ul {
   margin: 0;
   padding: 0; }
 
+h1, h2, h3 {
+  font-family: "Helvetica Neue", xingothic-tc, "PingFang TC", sans-serif; }
+
 h3 {
   font-weight: normal; }
 
