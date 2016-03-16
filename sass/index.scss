@@ -99,6 +99,7 @@ section {
 		border: 1px solid $darkGrey;
 		overflow: hidden;
 		background-position: center center;
+		background-repeat: no-repeat;
 
 		&:before, &:after {
 			content: ' ';
@@ -132,8 +133,8 @@ section {
 		&:before, &:after { content: none; }
 	}
 	> .cover.wide {
-		width: $maxW*2;
-		margin-left: -$maxW/2;
+		width: 100%;
+		max-width: 2*$maxW;
 		background-color: $trueWhite;
 		&:before, &:after { content: none; }
 	}
@@ -393,13 +394,31 @@ svg {
 	}
 }
 footer {
-	padding: 5em 2em;
+	position: relative;
+	margin-top: 10em;
 	background: #ccc;
-	text-align: center;
+
+	&:before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: -5em;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 5em;
+		height: 2px;
+		background: $trueBlack;
+	}
+
 	> #share {
-		padding: 1em;
+		img {
+			display: block;
+		}
 	}
 	> #credits {
+		margin: 0 auto;
+		padding: 0.5em 0;
+		width: 19em;
 		text-align: left;
 		a { display: inline-block; }
 	}

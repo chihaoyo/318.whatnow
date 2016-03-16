@@ -61,7 +61,8 @@ section > .cover {
   height: 320px;
   border: 1px solid #555;
   overflow: hidden;
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
   section > .cover:before, section > .cover:after {
     content: ' ';
     display: block;
@@ -89,8 +90,8 @@ section > .cover.short {
   section > .cover.short:before, section > .cover.short:after {
     content: none; }
 section > .cover.wide {
-  width: 640px;
-  margin-left: -160px;
+  width: 100%;
+  max-width: 640px;
   background-color: #fff; }
   section > .cover.wide:before, section > .cover.wide:after {
     content: none; }
@@ -296,12 +297,25 @@ svg {
       display: block; }
 
 footer {
-  padding: 5em 2em;
-  background: #ccc;
-  text-align: center; }
-  footer > #share {
-    padding: 1em; }
+  position: relative;
+  margin-top: 10em;
+  background: #ccc; }
+  footer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5em;
+    height: 2px;
+    background: #000; }
+  footer > #share img {
+    display: block; }
   footer > #credits {
+    margin: 0 auto;
+    padding: 0.5em 0;
+    width: 19em;
     text-align: left; }
     footer > #credits a {
       display: inline-block; }
