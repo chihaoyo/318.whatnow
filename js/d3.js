@@ -29,13 +29,6 @@ function wrap(text, width, em) { // Mandarin only
 	});
 }
 
-var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    ww = w.innerWidth || e.clientWidth || g.clientWidth,
-    wh = w.innerHeight|| e.clientHeight|| g.clientHeight;
-
 var circleR = 15, circleStrokeW = 8, fontSize = 12, lineH = 1.2, lineW = 8;
 
 var drawTimelines = function() {
@@ -113,6 +106,10 @@ var drawTimelines = function() {
 					'text-anchor': 'middle',
 				});*/
 			last = {x: x, y: y};
+
+			g.on('click', function(d) {
+				updateEventDetail(d);
+			});
 		});
 
 	svg.selectAll('g.event.shifted').each(function(d, i) {

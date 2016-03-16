@@ -94,7 +94,7 @@ section > p {
 
 section#street {
   padding-top: 10em;
-  background-image: url("../images/scenes_street.svg");
+  background-image: url("../images/graphics_street.svg");
   background-position: center center;
   background-repeat: repeat-y; }
   section#street > .chapter {
@@ -156,8 +156,8 @@ section#street {
           background-position: center center; }
         section#street > .chapter > .reports > .report > time, section#street > .chapter > .reports > .report > h3 {
           margin: 0;
-          background: #f0f0f0;
-          color: #0f0f0f; }
+          background: #fff;
+          color: #000; }
         section#street > .chapter > .reports > .report > time {
           position: absolute;
           top: 0;
@@ -170,7 +170,7 @@ section#street {
           display: none;
           position: absolute;
           bottom: 0;
-          width: 100%;
+          max-width: 15em;
           padding: 0.5em;
           font-size: inherit; }
   section#street > .chapter.expanded > .reports > .report {
@@ -206,11 +206,74 @@ svg {
   font-size: 12px; }
 
 #timelines {
-  background-image: url("../images/scenes_legislature.svg");
+  position: relative;
+  background-image: url("../images/graphics_timelines_background.svg");
   background-position: center center;
   background-repeat: repeat-y; }
   #timelines > svg > g.event {
     cursor: pointer; }
+  #timelines > #eventDetail {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    border: 3px solid #aaa;
+    border-radius: 3px; }
+    #timelines > #eventDetail > a {
+      display: block; }
+      #timelines > #eventDetail > a > .thumbnail {
+        width: 100%;
+        height: 0%;
+        padding-bottom: 55%;
+        background-color: #ccc;
+        background-size: 150%;
+        background-position: center center; }
+      #timelines > #eventDetail > a > time, #timelines > #eventDetail > a > h3 {
+        margin: 0;
+        background: #fff;
+        color: #000; }
+      #timelines > #eventDetail > a > time {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.25em 0.5em;
+        font-size: 0.8em;
+        font-weight: bold;
+        line-height: 1.0; }
+      #timelines > #eventDetail > a > h3 {
+        position: absolute;
+        bottom: 0;
+        max-width: 15em;
+        padding: 0.5em;
+        font-size: inherit; }
+    #timelines > #eventDetail > .close {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      overflow: hidden; }
+      #timelines > #eventDetail > .close:before, #timelines > #eventDetail > .close:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: -1px;
+        width: 80px;
+        height: 2px;
+        background: #000; }
+      #timelines > #eventDetail > .close:before {
+        left: 0;
+        transform-origin: top left;
+        transform: rotate(45deg); }
+      #timelines > #eventDetail > .close:after {
+        right: 0;
+        transform-origin: top right;
+        transform: rotate(-45deg); }
+
+#timelines.showEventDetail > #eventDetail {
+  display: block; }
 
 #chart {
   margin: 0; }

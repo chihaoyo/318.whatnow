@@ -1,5 +1,27 @@
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    ww = w.innerWidth || e.clientWidth || g.clientWidth,
+    wh = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+var $street, $legislature, $timlines, $eventDetail, $chart;
+
+var updateEventDetail = function(data) {
+	$eventDetail.find('time').text(data.time);
+	$eventDetail.find('h3').text(data.title);
+	var backgroundImage = data.youtubeID ? 'url(' + 'https://img.youtube.com/vi/' + data.youtubeID + '/hqdefault.jpg' + ')' : 'none';
+	$eventDetail.find('.thumbnail').css('background-image', backgroundImage);
+	$eventDetail.find('a').attr('href', data.link);
+
+	$timelines.addClass('showEventDetail');
+}
+
 $(function() {
-	var $street = $('#street');
+	// override
+	ww = $('body').width();
+
+	$street = $('#street');
 	for(var i = 0; i < data.chapters.length; i++) {
 		var chapter = data.chapters[i];
 		var $chapter = $('<div>').addClass('chapter').appendTo($street);
@@ -34,7 +56,7 @@ $(function() {
 		}
 	}
 
-	var $legislature = $('#legislature');
+	$legislature = $('#legislature');
 /*	var $timelineTitles = $('#timelineTitles');
 	for(var i = 0; i < data.timelines.length; i++) {
 		$('<div>').addClass('title').appendTo($timelineTitles)
@@ -42,11 +64,29 @@ $(function() {
 			.css('background-color', data.timelines[i].color);
 	}*/
 
+	// nav
 	$('nav > ul > li').click(function() {
 		$('body').animate({'scrollTop': $('section#' + $(this).attr('data-target')).position().top - 88 + 1});
 	});
 
-	ww = $('body').width();
+	$timelines = $('#timelines');
+	$eventDetail = $('#eventDetail');
+	$timelines.click(function(event) {
+		if(event.target.tagName.toLowerCase() == 'circle') {
+			var $el = $(event.target);
+			var offset = +$el.attr('cy');
+			if($timelines.height() - offset > $eventDetail.outerHeight())
+				offset += $el.attr('r')*2
+			else
+				offset -= $el.attr('r')*2 + $eventDetail.outerHeight();
+			offset = Math.round(offset);
+			console.log(offset);
+			$eventDetail.css('top', offset);
+		}
+	});
+	$eventDetail.find('.close').click(function() {
+		$timelines.removeClass('showEventDetail');
+	});
 	drawTimelines();
 	drawChart();
 });
