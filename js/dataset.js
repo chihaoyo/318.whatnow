@@ -47,7 +47,7 @@ var data = {
 	proposals: [
 		{name: "行政院", values: [{num: 0, text: "兩區：台灣地區與大陸地區"}, {num: 0, text: "無"}, {num: 1, text: "簽署並生效後公開"}, {num: 1, text: "僅需溝通諮詢國會"}, {num: 1, text: "無明定"}], color: "blue"},
 		{name: "李應元", values: [{num: 0, text: "兩岸：無明確定義"}, {num: 0, text: "無"}, {num: 2, text: "利害關係人要求後公開"}, {num: 2, text: "簽署前先向國會報告"}, {num: 1, text: "無明定"}], color: "SpringGreen"},
-		{name: "尤美女", values: [{num: 2, text: "兩府：臺灣中華民國政府與大陸中華人民共和國政府"}, {num: 2, text: "影響主權需公投"}, {num: 3, text: "簽署前公開草案"}, {num: 3, text: "應依國會同意之內容進行談判"}, {num: 4, text: "可修正協議內容"}], color: "LimeGreen"},
+		{name: "尤美女", values: [{num: 2, text: "兩府：臺灣中華民國政府與大陸中華人民共和國政府"}, {num: 2, text: "影響主權需公投"}, {num: 3, text: "簽署前公開草案"}, {num: 3, text: "應依國會同意之內容進行談判"}, {num: 5, text: "可修正協議內容"}], color: "LimeGreen"},
 		{name: "時力", values: [{num: 4, text: "兩國：我國與中華人民共和國"}, {num: 2, text: "影響主權需公投"}, {num: 3, text: "簽署前公開草案"}, {num: 3, text: "應依國會同意之內容進行談判"}, {num: 5, text: "可修正協議內容"}], color: "gold"},
 		{name: "蘇巧慧", values: [{num: 5, text: "兩國：臺灣與中國"}, {num: 5, text: "涉及國防外交財政經濟重大事項需經公投"}, {num: 4, text: "審查應公開"}, {num: 5, text: "簽署前國會可參與談判"}, {num: 5, text: "可修正協議內容"}], color: "teal"},
 		{name: "李俊俋", values: [{num: 5, text: "兩國：臺灣與中國"}, {num: 5, text: "涉及國防外交財政經濟重大事項需公投"}, {num: 5, text: "簽署與審查應公開"}, {num: 5, text: "簽署前國會可參與談判"}, {num: 5, text: "可修正協議內容"}], color: "DarkGreen"},
