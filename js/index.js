@@ -8,13 +8,21 @@ var w = window,
 var $street, $legislature, $timlines, $eventDetail, $chart;
 
 var updateEventDetail = function(data) {
-	$eventDetail.find('time').text(data.time);
-	$eventDetail.find('h3').text(data.title);
-	var backgroundImage = data.youtubeID ? 'url(' + 'https://img.youtube.com/vi/' + data.youtubeID + '/hqdefault.jpg' + ')' : 'none';
-	$eventDetail.find('.thumbnail').css('background-image', backgroundImage);
-	$eventDetail.find('a').attr('href', data.link);
+	var className = 'showEventDetail';
+	var $title = $eventDetail.find('h3');
+	if($title.text() != data.title || $timelines.hasClass(className) === false) {
+		$title.text(data.title);
+		$eventDetail.find('time').text(data.time);
 
-	$timelines.addClass('showEventDetail');
+		var backgroundImage = data.youtubeID ? 'url(' + 'https://img.youtube.com/vi/' + data.youtubeID + '/hqdefault.jpg' + ')' : 'none';
+		$eventDetail.find('.thumbnail').css('background-image', backgroundImage);
+		$eventDetail.find('a').attr('href', data.link);
+
+		$timelines.addClass(className);
+	}
+	else {
+		$timelines.removeClass(className);
+	}
 }
 
 $(function() {
@@ -80,7 +88,6 @@ $(function() {
 			else
 				offset -= $el.attr('r')*2 + $eventDetail.outerHeight();
 			offset = Math.round(offset);
-			console.log(offset);
 			$eventDetail.css('top', offset);
 		}
 	});
