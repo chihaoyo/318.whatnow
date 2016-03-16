@@ -90,7 +90,8 @@ section > .cover.short {
     content: none; }
 section > .cover.wide {
   width: 640px;
-  margin-left: -160px; }
+  margin-left: -160px;
+  background-color: #fff; }
   section > .cover.wide:before, section > .cover.wide:after {
     content: none; }
 section > p {

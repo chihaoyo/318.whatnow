@@ -134,6 +134,7 @@ section {
 	> .cover.wide {
 		width: $maxW*2;
 		margin-left: -$maxW/2;
+		background-color: $trueWhite;
 		&:before, &:after { content: none; }
 	}
 	> p {
