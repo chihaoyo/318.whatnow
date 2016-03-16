@@ -3,19 +3,23 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 10.666 29.4551)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="23.0604">西曆</text>
+		<text transform="matrix(1 0 0 1 10.666 29.4551)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="23.0604">西曆</text>
 	
-		<text transform="matrix(1 0 0 1 118.79 72.3457)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">年</text>
+		<text transform="matrix(1 0 0 1 118.79 72.3457)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">年</text>
 	
-		<text transform="matrix(1 0 0 1 188.4053 72.3467)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">月</text>
-	<text transform="matrix(1 0 0 1 9.666 73.4287)" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542">2016</text>
-	<text transform="matrix(1 0 0 1 162.0098 73.4287)" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542">3</text>
+		<text transform="matrix(1 0 0 1 188.4053 72.3467)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">月</text>
 	
-		<text transform="matrix(1 0 0 1 272.9639 72.3467)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">日</text>
+		<text transform="matrix(1 0 0 1 9.666 73.4287)" display="inline" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542">2016</text>
 	
-		<text transform="matrix(1 0 0 1 224.1416 73.4287)" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542" letter-spacing="-2">17</text>
+		<text transform="matrix(1 0 0 1 162.0098 73.4287)" display="inline" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542">3</text>
+	
+		<text transform="matrix(1 0 0 1 272.9639 72.3467)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="44.5358">日</text>
+	
+		<text transform="matrix(1 0 0 1 224.1416 73.4287)" display="inline" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="52.6542" letter-spacing="-2">17</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect y="0" fill="#4D4D4D" width="320" height="88"/>
@@ -134,5 +138,9 @@
 			c0.105-0.843,0.264-2.071,0.474-3.687c0.07-0.491,0.229-0.859,0.475-1.105c3.334,0.211,6.178,0.316,8.529,0.316
 			c0.456,0,2.098-0.026,4.924-0.079c2.825-0.053,5.028-0.079,6.607-0.079h2.633C273.548,38.888,273.794,39.011,273.794,39.256z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

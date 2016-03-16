@@ -3,15 +3,17 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
-	<g>
+<g id="Layer_3" display="none">
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 53.2217 68.9111)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="64.3997">重新開始</text>
 	</g>
 	
-		<text transform="matrix(1 0 0 1 26.2432 15.5654)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="29.2007" glyph-orientation-vertical="0" writing-mode="tb">結束</text>
+		<text transform="matrix(1 0 0 1 26.2432 15.5654)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="29.2007" glyph-orientation-vertical="0" writing-mode="tb">結束</text>
 	
-		<text transform="matrix(1 0 0 1 36.3213 65.7559)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="54.4987">･</text>
+		<text transform="matrix(1 0 0 1 36.3213 65.7559)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="54.4987">･</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#4D4D4D" width="320" height="88"/>
@@ -100,5 +102,9 @@
 		<path fill="#FFFFFF" d="M43.951,45.049c0-3.324,2.669-5.994,5.994-5.994c3.324,0,5.994,2.67,5.994,5.994
 			c0,3.325-2.67,5.994-5.994,5.994C46.511,51.043,43.951,48.263,43.951,45.049z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

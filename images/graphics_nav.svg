@@ -3,24 +3,27 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
-	<text transform="matrix(1 0 0 1 12.538 33.6095)" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="32.6174">318</text>
-	<g>
+<g id="Layer_3" display="none">
+	
+		<text transform="matrix(1 0 0 1 12.538 33.6095)" display="inline" fill="#FFFFFF" font-family="'BodoniSvtyTwoITCTT-Bold'" font-size="32.6174">318</text>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 11.334 73.9967)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="37.6033">衝擊</text>
 	</g>
 	
-		<text transform="matrix(1 0 0 1 121.7764 31.6095)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="25.1498">新國會</text>
-	<g>
+		<text transform="matrix(1 0 0 1 121.7764 31.6095)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="25.1498">新國會</text>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 120.5723 73.9967)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="37.6033">降臨</text>
 	</g>
 	
-		<text transform="matrix(1 0 0 1 234.5674 31.6095)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="25.1498">黨版、</text>
-	<g>
+		<text transform="matrix(1 0 0 1 234.5674 31.6095)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="25.1498">黨版、</text>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 233.3633 73.9967)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="37.6033">襲來</text>
 	</g>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect y="0" fill="#808080" width="100" height="88"/>
@@ -256,5 +259,9 @@
 				z"/>
 		</g>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

@@ -3,7 +3,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<g>
@@ -89,5 +91,9 @@
 			V104.383z M61.835,88.732H44.073v4.273h17.762V88.732z M61.835,98.143v-4.369H44.073v4.369H61.835z M44.073,103.375h17.762V98.91
 			H44.073V103.375z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

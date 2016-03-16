@@ -3,17 +3,19 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="180px" viewBox="0 0 320 180" enable-background="new 0 0 320 180" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 17.6404 155.7666)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="111.709">、</text>
-	<g>
+		<text transform="matrix(1 0 0 1 17.6404 155.7666)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="111.709">、</text>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 5.9014 75.3387)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="75.7747">自己國家</text>
 	</g>
-	<g>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 81.6757 160.4919)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="75.7747">自己救</text>
 	</g>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect y="0" fill="#4D4D4D" width="320" height="180"/>
@@ -96,5 +98,9 @@
 				c-0.984,2.35-2.121,4.623-3.334,6.669c1.44,6.138,3.486,11.518,6.138,16.216c2.273-6.896,3.638-14.549,4.396-22.885H283.312z"/>
 		</g>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

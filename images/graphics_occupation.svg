@@ -3,13 +3,15 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 13.4385 66.0576)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="56.2773">爆發</text>
+		<text transform="matrix(1 0 0 1 13.4385 66.0576)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="56.2773">爆發</text>
 	
-		<text transform="matrix(1 0 0 1 139.1338 66.125)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="56.2773">立法院</text>
+		<text transform="matrix(1 0 0 1 139.1338 66.125)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="56.2773">立法院</text>
 	
-		<text transform="matrix(1 0 0 1 122.6865 66.1895)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="54.005">･</text>
+		<text transform="matrix(1 0 0 1 122.6865 66.1895)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="54.005">･</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#4D4D4D" width="320" height="88"/>
@@ -103,5 +105,9 @@
 		<path fill="#FFFFFF" d="M130.246,45.669c0-3.294,2.645-5.94,5.94-5.94c3.294,0,5.94,2.646,5.94,5.94c0,3.295-2.646,5.94-5.94,5.94
 			C132.783,51.609,130.246,48.855,130.246,45.669z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

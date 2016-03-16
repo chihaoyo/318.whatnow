@@ -3,19 +3,21 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 160.1133 55.6123)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="62.5997" glyph-orientation-vertical="0" writing-mode="tb">監督條例</text>
-	<g>
+		<text transform="matrix(1 0 0 1 160.1133 55.6123)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="62.5997" glyph-orientation-vertical="0" writing-mode="tb">監督條例</text>
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 53.58 82.4736)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="78.4399" glyph-orientation-vertical="0" writing-mode="tb">服貿</text>
 	</g>
 	
-		<text transform="matrix(1 0 0 1 267.6474 55.6123)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="62.5997" glyph-orientation-vertical="0" writing-mode="tb">其他事務</text>
+		<text transform="matrix(1 0 0 1 267.6474 55.6123)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="62.5997" glyph-orientation-vertical="0" writing-mode="tb">其他事務</text>
 	
-		<text transform="matrix(1 0 0 1 124.3428 44.7636)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="35.7716">兩岸</text>
+		<text transform="matrix(1 0 0 1 124.3428 44.7636)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="35.7716">兩岸</text>
 	
-		<text transform="matrix(1 0 0 1 231.876 44.7636)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="35.7716">兩岸</text>
+		<text transform="matrix(1 0 0 1 231.876 44.7636)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="35.7716">兩岸</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#4D4D4D" width="106" height="320"/>
@@ -202,5 +204,9 @@
 			c-0.285,0.393-0.751,0.501-1.752,0.501H277.197z M277.269,23.66c0,0.143-1.539,0.93-4.614,0.93l5.293,1.752h17.456l2.146-3.004
 			c-1.396,0.43-2.719,0.43-4.007,0.43v-1.753h-16.275V23.66z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

@@ -3,11 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
-	<g>
+<g id="Layer_3" display="none">
+	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 12.2646 66.5361)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="59.0941">另一種觀點</text>
 	</g>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#4D4D4D" width="320" height="88"/>
@@ -85,5 +87,9 @@
 				c-0.118,0.768-0.65,1.241-2.364,1.477v12.645h1.713l3.663-5.554L306.965,31.671z M296.269,47.39h-9.218v18.791h9.218V47.39z"/>
 		</g>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

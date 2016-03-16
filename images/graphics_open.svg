@@ -3,13 +3,15 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 15.9326 281.3847)" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="144.0688">襲來</text>
+		<text transform="matrix(1 0 0 1 15.9326 281.3847)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="144.0688">襲來</text>
 	
-		<text transform="matrix(1 0 0 1 13.0683 87.0493)" fill="#FCEE21" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="73.466">非常事態</text>
+		<text transform="matrix(1 0 0 1 13.0683 87.0493)" display="inline" fill="#FCEE21" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="73.466">非常事態</text>
 	
-		<text transform="matrix(1 0 0 1 22.8476 139.7095)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="36.5741">新･兩岸監督條例</text>
+		<text transform="matrix(1 0 0 1 22.8476 139.7095)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="36.5741">新･兩岸監督條例</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect width="320" height="320"/>
@@ -198,5 +200,9 @@
 			c0.329-2.084,0.549-4.206,0.658-6.364H277.038z M289.986,109.059l6.217,0.512c-0.037,0.512-0.22,0.805-1.462,0.988v26.773
 			c0,3.036-0.732,5.34-6.072,5.852c0-3.109-0.805-4.279-4.353-4.755v-0.475h5.048c0.475,0,0.622-0.183,0.622-0.622V109.059z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

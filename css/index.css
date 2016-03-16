@@ -60,7 +60,8 @@ section > .cover {
   width: 320px;
   height: 320px;
   border: 1px solid #555;
-  overflow: hidden; }
+  overflow: hidden;
+  background-position: center center; }
   section > .cover:before, section > .cover:after {
     content: ' ';
     display: block;
@@ -86,6 +87,11 @@ section > .cover.short {
   height: 88px;
   border: none; }
   section > .cover.short:before, section > .cover.short:after {
+    content: none; }
+section > .cover.wide {
+  width: 640px;
+  margin-left: -160px; }
+  section > .cover.wide:before, section > .cover.wide:after {
     content: none; }
 section > p {
   width: 18em;
@@ -317,6 +323,7 @@ nav {
   display: block;
   position: fixed;
   top: 0;
+  left: 0;
   width: 320px;
   color: #f0f0f0;
   background: #0f0f0f;

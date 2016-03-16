@@ -3,9 +3,11 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
 	
-		<text transform="matrix(1 0 0 1 15.9297 70.2627)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="72.5354">那晚以前</text>
+		<text transform="matrix(1 0 0 1 15.9297 70.2627)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="72.5354">那晚以前</text>
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#4D4D4D" width="320" height="88"/>
@@ -57,5 +59,9 @@
 			c0.87,0,1.161-0.363,1.161-1.161V29.788l12.694,0.87c-0.073,0.943-0.436,1.523-2.757,1.814v33.076
 			c0,6.166-1.451,10.663-12.476,11.606c0-6.673-2.321-8.631-8.632-9.429v-0.942H286.341z"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>

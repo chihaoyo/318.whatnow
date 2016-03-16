@@ -3,7 +3,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3">
+<g id="Layer_3" display="none">
+</g>
+<g id="Layer_7">
 </g>
 <g id="Layer_2">
 	<rect fill="#FFFFFF" width="320" height="320"/>
@@ -56,5 +58,9 @@
 		<polygon points="213.074,299.581 209.743,299.581 212.069,286.823 215.4,286.823 		"/>
 		<polygon points="215.588,279.721 212.257,279.721 209.995,275.322 213.326,275.322 		"/>
 	</g>
+</g>
+<g id="Layer_5" opacity="0.8">
+</g>
+<g id="Layer_6">
 </g>
 </svg>
