@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px"
 	 height="320px" viewBox="0 0 640 320" enable-background="new 0 0 640 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<image display="inline" overflow="visible" width="600" height="400" xlink:href="data:image/gif;base64,R0lGODlhWAKQAfcAAGtkVby9xs7W2FRJRmRaWJGHdTdEJtCujXVraUhDQycsGHiFi4Z5eJaMisjG
 vGw2Lq+lmbatrKacm5qlqbzGydro78e9vJucptfOzPPJmUQ4NtPd6HF5iTM2IqyttTYzMkdDOHiE
@@ -2406,15 +2406,11 @@ FoFGNYnZ2YkZRaBiXhqRFJ40GGvEBhXRfAThOwYxShxhJyxxSjLhOzXBXT+MMLU0C9fSEDOBEgEB
 ADs=" transform="matrix(0.75 0 0 0.75 92.75 52)">
 	</image>
 </g>
-<g id="Layer_7">
+<g id="backgrounds">
 </g>
-<g id="Layer_2">
+<g id="stripes">
 </g>
-<g id="Layer_4">
-</g>
-<g id="Layer_1">
-</g>
-<g id="Layer_5" opacity="0.8">
+<g id="main">
 	<rect x="133" y="181" fill="#B3B3B3" width="77" height="125"/>
 	<rect x="429" y="181" fill="#B3B3B3" width="77" height="125"/>
 	<rect x="258" y="124" fill="#CCCCCC" width="123" height="167"/>
@@ -2608,7 +2604,7 @@ ADs=" transform="matrix(0.75 0 0 0.75 92.75 52)">
 	<polygon fill="#999999" points="369.5,241 271.25,241 263,235 377.75,235 	"/>
 	<rect x="271" y="241" fill="#808080" width="98" height="50"/>
 </g>
-<g id="Layer_6">
+<g id="secondary">
 	<rect x="271" y="154" fill="#666666" width="26" height="30"/>
 	<rect x="272" y="156" fill="#F2F2F2" width="5" height="7"/>
 	<rect x="278" y="156" fill="#F2F2F2" width="5" height="7"/>

@@ -3,16 +3,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect fill="#FFFFFF" width="320" height="320"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<rect x="58.534" y="276.62" width="3.98" height="22.834"/>
 		<rect x="134.955" y="270.419" width="3.98" height="29.035"/>
@@ -59,8 +57,6 @@
 		<polygon points="215.588,279.721 212.257,279.721 209.995,275.322 213.326,275.322 		"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

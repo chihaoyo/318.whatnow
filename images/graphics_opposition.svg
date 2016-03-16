@@ -3,20 +3,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	<g display="inline">
 		
 			<text transform="matrix(1 0 0 1 12.2646 66.5361)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="59.0941">另一種觀點</text>
 	</g>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect fill="#4D4D4D" width="320" height="88"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<g>
 			<path fill="#FFFFFF" d="M58.298,43.253l8.154,5.969c-0.414,0.531-1.181,0.945-2.364,1.181
@@ -88,8 +86,6 @@
 		</g>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

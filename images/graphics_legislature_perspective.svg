@@ -3,9 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px"
 	 height="320px" viewBox="0 0 640 320" enable-background="new 0 0 640 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 </g>
-<g id="Layer_7">
+<g id="backgrounds">
+</g>
+<g id="stripes">
+</g>
+<g id="main">
 	<polygon fill="#B3B3B3" points="194.125,277.707 106.013,277.707 217.328,118.527 259.605,118.527 	"/>
 	<polygon fill="#B3B3B3" points="532.843,277.707 444.73,277.707 379.846,118.527 422.123,118.527 	"/>
 	<polygon fill="#CCCCCC" points="381.767,242.479 257.22,242.479 292.486,90.377 347.071,90.377 	"/>
@@ -495,10 +499,8 @@
 	</g>
 	<path fill="#FF0000" d="M330.75,57.625c0,0,1,2.875,0,6.25s-3,4.625-4.625,4.375s-3,0.875-3.375,1.625s-0.875,1.625-1.25,1.875
 		s-0.694,0-0.694,0L320.758,63c0,0,2.398,1,4.945,0c2.547-1,4.547-5.5,4.547-5.5"/>
-	<path fill="#1B1464" d="M320.758,63l0.018,3.292c0,0,0.603-0.429,1.541-0.804s1.559-0.363,1.559-0.363s-0.008-0.616-0.083-1.021
+	<path fill="#0000FF" d="M320.758,63l0.018,3.292c0,0,0.603-0.429,1.541-0.804s1.559-0.363,1.559-0.363s-0.008-0.616-0.083-1.021
 		c-0.076-0.404-0.232-0.667-0.232-0.667s-0.862,0.02-1.591-0.093S320.758,63,320.758,63z"/>
-</g>
-<g id="Layer_2">
 	<g>
 		<g>
 			<polygon fill="#E2220E" points="360,320 280,320 308.117,242.479 331.883,242.479 			"/>
@@ -511,12 +513,6 @@
 		</g>
 	</g>
 </g>
-<g id="Layer_4">
-</g>
-<g id="Layer_1">
-</g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

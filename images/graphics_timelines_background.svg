@@ -3,20 +3,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<g>
 		<rect x="120" fill="#E2220E" width="80" height="320"/>
 		<line fill="none" stroke="#C1272D" stroke-miterlimit="10" x1="120" y1="0" x2="120" y2="320"/>
 		<line fill="none" stroke="#C1272D" stroke-miterlimit="10" x1="200" y1="0" x2="200" y2="320"/>
 	</g>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g opacity="0.15">
 		<path d="M283.131,236.078l6.674,4.849c-0.337,0.527-0.961,0.672-2.354,0.672h-43.059l-0.24-0.769h10.129v-22.609h-8.593
 			l-0.24-0.769h8.833v-8.16l8.785,0.864c-0.097,0.624-0.529,1.008-1.824,1.199v6.097h11.185v-8.16l8.929,0.864
@@ -92,8 +90,6 @@
 			H44.073V103.375z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

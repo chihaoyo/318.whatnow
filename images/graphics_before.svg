@@ -3,18 +3,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 15.9297 70.2627)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="72.5354">那晚以前</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect fill="#4D4D4D" width="320" height="88"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M42.332,15.135l4.28-5.586l9.72,7.834c-0.508,0.725-1.596,1.306-3.337,1.596
 			c-0.435,39.315-0.942,49.398-5.295,53.822c-2.902,2.902-5.658,4.062-10.735,4.135c0-5.368,0-8.342-6.528-10.155V65.91l6.891,0.073
@@ -60,8 +58,6 @@
 			c0,6.166-1.451,10.663-12.476,11.606c0-6.673-2.321-8.631-8.632-9.429v-0.942H286.341z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

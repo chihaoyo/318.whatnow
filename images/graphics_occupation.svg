@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="88px" viewBox="0 0 320 88" enable-background="new 0 0 320 88" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 13.4385 66.0576)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="56.2773">爆發</text>
 	
@@ -11,14 +11,12 @@
 	
 		<text transform="matrix(1 0 0 1 122.6865 66.1895)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="54.005">･</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect fill="#4D4D4D" width="320" height="88"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M59.365,54.407c-2.195-2.252-4.052-4.953-5.403-7.486h-5.403c-1.688,2.702-4.334,4.953-7.542,6.811
 			c3.49,0.901,4.728,2.363,4.728,3.715c0,1.576-1.688,2.982-3.377,2.982c-0.957,0-1.97-0.45-2.702-1.463
@@ -106,8 +104,6 @@
 			C132.783,51.609,130.246,48.855,130.246,45.669z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

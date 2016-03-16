@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 148.6582 76.6465)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="52.9334">新國會</text>
 	
@@ -11,14 +11,12 @@
 	
 		<text transform="matrix(1 0 0 1 271.9121 105.8389)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="98.7678">、</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect width="320" height="320"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M193.863,45.838l6.882,5.452c-0.423,0.582-1.217,0.741-2.647,0.741h-2.541v27.685
 			c-0.053,0.423-2.276,1.958-6.14,1.958h-1.377V52.031h-3.758v1.906c0,9.581-0.953,20.802-14.187,27.684l-0.476-0.529
@@ -97,8 +95,6 @@
 			c-2.37,0-4.74-0.988-6.419-3.26c-0.692-6.124-4.247-14.914-11.556-19.16L275.37,91.813z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

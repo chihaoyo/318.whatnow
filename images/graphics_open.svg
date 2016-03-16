@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 15.9326 281.3847)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="144.0688">襲來</text>
 	
@@ -11,14 +11,12 @@
 	
 		<text transform="matrix(1 0 0 1 22.8476 139.7095)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="36.5741">新･兩岸監督條例</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect width="320" height="320"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M149.187,263.232c-0.576,1.009-1.44,1.585-3.168,1.585c-0.577,0-1.441-0.144-2.305-0.289
 			c-6.195,1.585-14.55,2.593-22.761,3.17v0.144c11.525,3.889,24.634,5.763,37.167,6.77v1.729
@@ -201,8 +199,6 @@
 			c0,3.036-0.732,5.34-6.072,5.852c0-3.109-0.805-4.279-4.353-4.755v-0.475h5.048c0.475,0,0.622-0.183,0.622-0.622V109.059z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="180px" viewBox="0 0 320 180" enable-background="new 0 0 320 180" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 17.6404 155.7666)" display="inline" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="111.709">、</text>
 	<g display="inline">
@@ -15,14 +15,12 @@
 			<text transform="matrix(1 0 0 1 81.6757 160.4919)" fill="#FFFFFF" font-family="'KozMinPr6N-Heavy-83pv-RKSJ-H'" font-size="75.7747">自己救</text>
 	</g>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect y="0" fill="#4D4D4D" width="320" height="180"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M49.478,139.904c16.422,2.122,28.151,9.271,28.151,17.873c0,5.362-4.134,8.49-8.378,8.49
 			c-2.682,0-5.362-1.117-7.262-3.687c-0.781-6.926-4.804-16.868-13.069-21.672L49.478,139.904z"/>
@@ -99,8 +97,6 @@
 		</g>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

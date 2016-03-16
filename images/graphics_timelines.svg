@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 160.1133 55.6123)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="62.5997" glyph-orientation-vertical="0" writing-mode="tb">監督條例</text>
 	<g display="inline">
@@ -17,14 +17,12 @@
 	
 		<text transform="matrix(1 0 0 1 231.876 44.7636)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="35.7716">兩岸</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect fill="#4D4D4D" width="106" height="320"/>
 	<rect x="214" fill="#4D4D4D" width="106" height="320"/>
 	<rect x="106" fill="#4D4D4D" width="108" height="320"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 	<polygon fill="#ED1C24" points="214,67.143 106,20.143 106,-8.857 214,38.143 	"/>
 	<polygon fill="#ED1C24" points="214,118.286 106,71.286 106,42.286 214,89.286 	"/>
 	<polygon fill="#ED1C24" points="214,169.429 106,122.429 106,93.429 214,140.429 	"/>
@@ -34,7 +32,7 @@
 	<polygon fill="#ED1C24" points="214,322.857 106,275.857 106,246.857 214,293.857 	"/>
 	<polygon fill="#ED1C24" points="214.559,373.194 105.872,327.803 105.441,298.806 214.128,344.197 	"/>
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M184.435,107.758l5.384,5.134c-0.439,0.689-1.252,0.877-2.943,0.877h-55.969l-0.251-1.002h8.326V92.232
 			c-2.003,1.002-3.944,1.002-6.385,1.002V58.676l9.015,3.318h10.142l3.694-4.696l6.948,4.821c-0.438,0.752-1.377,0.876-2.942,0.876
@@ -205,8 +203,6 @@
 			c-1.396,0.43-2.719,0.43-4.007,0.43v-1.753h-16.275V23.66z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>

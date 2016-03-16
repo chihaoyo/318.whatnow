@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px"
 	 height="320px" viewBox="0 0 320 320" enable-background="new 0 0 320 320" xml:space="preserve">
-<g id="Layer_3" display="none">
+<g id="backup" display="none">
 	
 		<text transform="matrix(1 0 0 1 58.6069 129.2632)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="86.7197" glyph-orientation-vertical="0" writing-mode="tb">黨版</text>
 	
@@ -13,14 +13,12 @@
 	
 		<text transform="matrix(1 0 0 1 99.2095 290.7842)" display="inline" fill="#FFFFFF" font-family="'KozMinPro-Heavy-83pv-RKSJ-H'" font-size="98.7678">、</text>
 </g>
-<g id="Layer_7">
-</g>
-<g id="Layer_2">
+<g id="backgrounds">
 	<rect width="320" height="320"/>
 </g>
-<g id="Layer_4">
+<g id="stripes">
 </g>
-<g id="Layer_1">
+<g id="main">
 	<g>
 		<path fill="#FFFFFF" d="M34.499,195.601c0.521,1.994,0.694,3.902,0.694,5.636c0,8.586-5.723,12.835-10.753,12.835
 			c-3.469,0-6.851-1.908-6.851-5.377c0-2.861,2.255-4.943,4.943-5.897c4.336-0.608,9.713-3.296,10.84-7.285L34.499,195.601z
@@ -126,8 +124,6 @@
 			c-2.37,0-4.74-0.988-6.42-3.26c-0.691-6.124-4.247-14.914-11.555-19.16L102.667,276.76z"/>
 	</g>
 </g>
-<g id="Layer_5" opacity="0.8">
-</g>
-<g id="Layer_6">
+<g id="secondary">
 </g>
 </svg>
